@@ -1,0 +1,27 @@
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }} - pyladies</title>
+        {% else %}
+        <title>pyladies</title>
+        {% endif %}
+    </head>
+    <body>
+        <div>
+            Site:
+            <a href="/PyLadies">PyLadies</a>
+            <a href="/login">Login</a>
+        </div>
+        <hr>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+        {% block content %}{% endblock %}
+    </body>
+</html>
