@@ -1,0 +1,7 @@
+id,name,age,gender,avg_logins,logins
+1,John,23,male,0.560009,123
+2,George,42,male,1.232155,147
+3,Mary,19,female,#DIV/0!,0
+4,Kate,52,female,0.854654,156
+5,Bill,35,male,1.787454,205
+6,Fiona,63,female,#DIV/0!,0
