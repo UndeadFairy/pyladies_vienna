@@ -3,9 +3,11 @@ from flask import Flask, request, jsonify, make_response
 from flask_sqlalchemy import SQLAlchemy
 from marshmallow_sqlalchemy import ModelSchema
 from marshmallow import fields
+import os
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////home/lubomir/Documents/tynka/pyladies_vienna/rest/books.db'
+currentpath = os.getcwd()
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///%s/books.db' % currentpath
 db = SQLAlchemy(app)
 
 
