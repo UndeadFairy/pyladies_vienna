@@ -27,4 +27,5 @@ def login():
             form.username.data, form.remember_me.data))
         return redirect('/PyLadies')
     return render_template('login.html', title='Sign In', form=form)
-app.run()
+if __name__ == "__main__":
+    app.run()
