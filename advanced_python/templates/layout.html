@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flask Template Example</title>
+    <style type="text/css">
+      .container {
+        max-width: 500px;
+        padding-top: 100px;
+      }
+      h2 {color: red;}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>This is part of my base template</h2>
+      <br>
+      {% block my_content %}{% endblock %}
+      <br>
+      <h2>This is part of my base template</h2>
+    </div>
+  </body>
+</html>
